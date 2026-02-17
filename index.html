@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotCheck - Crowd Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; line-height: 1.6; background: #f8f9fa; }
+        .hero { background: linear-gradient(135deg, #4CAF50, #2196F3); color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; opacity: 0.9; }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        h2 { color: #333; margin: 30px 0 15px; font-size: 1.4em; }
+        h3 { color: #555; margin: 20px 0 10px; }
+        p, li { color: #555; margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        a { color: #2196F3; }
+        .section { background: white; border-radius: 12px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .footer { text-align: center; padding: 30px; color: #999; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>SpotCheck</h1>
+        <p>See how busy places are before you go</p>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>About SpotCheck</h2>
+            <p>SpotCheck is a community-powered app that shows you real-time crowd levels at nearby cafes, gyms, restaurants, and more. No more showing up to a packed spot — check before you go.</p>
+        </div>
+
+        <div class="section">
+            <h2>Support</h2>
+            <p>Need help or have feedback? Contact us at:</p>
+            <p><a href="mailto:spotcheckstudio@gmail.com">spotcheckstudio@gmail.com</a></p>
+        </div>
+
+        <div class="section" id="privacy">
+            <h2>Privacy Policy</h2>
+            <p><em>Last updated: February 2025</em></p>
+
+            <h3>Overview</h3>
+            <p>SpotCheck helps you see how busy nearby places are before you go. This policy explains what data we collect, how we use it, and your rights.</p>
+
+            <h3>Information We Collect</h3>
+            <ul>
+                <li><strong>Location Data:</strong> We access your device location to show nearby places and their crowd levels. Your exact location is never stored on our servers.</li>
+                <li><strong>Email Address:</strong> If you create an account, we store your email for authentication only.</li>
+                <li><strong>Crowd Reports:</strong> When you report how busy a place is, we store the place ID, crowd level, and timestamp. Reports are anonymous.</li>
+                <li><strong>Anonymous ID:</strong> Guest users get an anonymous identifier that cannot be traced back to them.</li>
+            </ul>
+
+            <h3>How We Use Your Data</h3>
+            <ul>
+                <li><strong>Nearby Places:</strong> Your location is sent to Google Places API to find places near you.</li>
+                <li><strong>Crowd Estimates:</strong> We aggregate crowd reports to show estimated busyness levels.</li>
+                <li><strong>Pattern Learning:</strong> Aggregated data improves predictions over time. No individual data is used.</li>
+            </ul>
+
+            <h3>Data Storage</h3>
+            <ul>
+                <li><strong>Cloud Storage:</strong> Data is stored securely using Supabase with row-level security.</li>
+                <li><strong>Local Storage:</strong> Some history data is stored on your device and never leaves it.</li>
+                <li><strong>Data Retention:</strong> Crowd reports expire automatically. Local data is retained up to 90 days.</li>
+            </ul>
+
+            <h3>Third-Party Services</h3>
+            <ul>
+                <li>Google Places API — place discovery and business hours</li>
+                <li>Supabase — authentication and cloud storage</li>
+                <li>Apple MapKit — fallback place discovery</li>
+            </ul>
+
+            <h3>Your Rights</h3>
+            <ul>
+                <li>Delete your account and all data anytime from app settings.</li>
+                <li>Use the app without an account as a guest.</li>
+                <li>Revoke location access anytime in device Settings.</li>
+            </ul>
+
+            <h3>Children's Privacy</h3>
+            <p>SpotCheck is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+            <h3>Changes to This Policy</h3>
+            <p>We may update this policy from time to time and will update the date at the top.</p>
+
+            <h3>Contact Us</h3>
+            <p>Questions? Email us at <a href="mailto:spotcheckstudio@gmail.com">spotcheckstudio@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 SpotCheck Studio. All rights reserved.
+    </div>
+</body>
+</html>
